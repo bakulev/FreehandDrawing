@@ -15,6 +15,8 @@
 		84B1CB651A8793E900007D0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B1CB641A8793E900007D0C /* Images.xcassets */; };
 		84B1CB681A8793E900007D0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B1CB661A8793E900007D0C /* LaunchScreen.xib */; };
 		84B1CB741A8793E900007D0C /* FreehandDrawingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB731A8793E900007D0C /* FreehandDrawingTests.m */; };
+		84B1CB821A87A35A00007D0C /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB811A87A35A00007D0C /* LinearInterpView.m */; };
+		84B1CB841A87A41800007D0C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB831A87A41800007D0C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		84B1CB6D1A8793E900007D0C /* FreehandDrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreehandDrawingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1CB721A8793E900007D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1CB731A8793E900007D0C /* FreehandDrawingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreehandDrawingTests.m; sourceTree = "<group>"; };
+		84B1CB801A87A35A00007D0C /* LinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearInterpView.h; sourceTree = "<group>"; };
+		84B1CB811A87A35A00007D0C /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
+		84B1CB831A87A41800007D0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 		84B1CB531A8793E800007D0C /* FreehandDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				84B1CB831A87A41800007D0C /* README.md */,
 				84B1CB581A8793E800007D0C /* AppDelegate.h */,
 				84B1CB591A8793E800007D0C /* AppDelegate.m */,
 				84B1CB5E1A8793E800007D0C /* ViewController.h */,
@@ -92,6 +98,8 @@
 				84B1CB661A8793E900007D0C /* LaunchScreen.xib */,
 				84B1CB5B1A8793E800007D0C /* FreehandDrawing.xcdatamodeld */,
 				84B1CB541A8793E800007D0C /* Supporting Files */,
+				84B1CB801A87A35A00007D0C /* LinearInterpView.h */,
+				84B1CB811A87A35A00007D0C /* LinearInterpView.m */,
 			);
 			path = FreehandDrawing;
 			sourceTree = "<group>";
@@ -222,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B1CB841A87A41800007D0C /* README.md in Sources */,
+				84B1CB821A87A35A00007D0C /* LinearInterpView.m in Sources */,
 				84B1CB5A1A8793E800007D0C /* AppDelegate.m in Sources */,
 				84B1CB571A8793E800007D0C /* main.m in Sources */,
 				84B1CB601A8793E800007D0C /* ViewController.m in Sources */,
@@ -418,6 +428,7 @@
 				84B1CB791A8793E900007D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84B1CB7A1A8793E900007D0C /* Build configuration list for PBXNativeTarget "FreehandDrawingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				84B1CB7C1A8793E900007D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
