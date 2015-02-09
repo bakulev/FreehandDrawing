@@ -8,3 +8,5 @@
 Developing without Provisioning Profile [http://iphonedevwiki.net/index.php/Xcode]
 
 Описание как запускать приложения не платя 99 долларов [http://habrahabr.ru/post/243345/]
+
+Support of multitouch got from [http://www.informit.com/articles/article.aspx?p=1998968&seqNum=10]

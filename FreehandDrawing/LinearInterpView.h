@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LinearInterpView : UIView
-
+- (void) clear;
 @end
