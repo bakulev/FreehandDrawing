@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84370B421A88F3A500F751F3 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84370B411A88F3A500F751F3 /* Entitlements.plist */; };
 		84B1CB571A8793E800007D0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB561A8793E800007D0C /* main.m */; };
 		84B1CB5A1A8793E800007D0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB591A8793E800007D0C /* AppDelegate.m */; };
 		84B1CB5D1A8793E800007D0C /* FreehandDrawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B1CB5B1A8793E800007D0C /* FreehandDrawing.xcdatamodeld */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84370B411A88F3A500F751F3 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		84B1CB511A8793E800007D0C /* FreehandDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreehandDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1CB551A8793E800007D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1CB561A8793E800007D0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		84B1CB481A8793E700007D0C = {
 			isa = PBXGroup;
 			children = (
+				84370B411A88F3A500F751F3 /* Entitlements.plist */,
 				84B1CB531A8793E800007D0C /* FreehandDrawing */,
 				84B1CB701A8793E900007D0C /* FreehandDrawingTests */,
 				84B1CB521A8793E800007D0C /* Products */,
@@ -212,6 +215,7 @@
 			files = (
 				84B1CB631A8793E800007D0C /* Main.storyboard in Resources */,
 				84B1CB681A8793E900007D0C /* LaunchScreen.xib in Resources */,
+				84370B421A88F3A500F751F3 /* Entitlements.plist in Resources */,
 				84B1CB651A8793E900007D0C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +298,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -336,7 +342,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -359,6 +367,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = FreehandDrawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +379,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = FreehandDrawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

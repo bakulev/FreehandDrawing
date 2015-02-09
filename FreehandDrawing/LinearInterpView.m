@@ -10,13 +10,6 @@
 
 @implementation LinearInterpView
 {
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
     UIBezierPath *path; // (3)
 }
 
@@ -24,16 +17,21 @@
 {
     if (self = [super initWithCoder:aDecoder])
     {
-        [self setMultipleTouchEnabled:NO]; // (2)
+        [self setMultipleTouchEnabled:YES]; // (2)
         [self setBackgroundColor:[UIColor whiteColor]];
         path = [UIBezierPath bezierPath];
-        [path setLineWidth:2.0];
+        [path setLineWidth:10.0];
     }
     return self;
 }
 
+/*
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ */
 - (void)drawRect:(CGRect)rect // (5)
 {
+    // Drawing code
     [[UIColor blackColor] setStroke];
     [path stroke];
 }
