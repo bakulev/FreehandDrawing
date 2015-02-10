@@ -31,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8433D5971A8A99CE00E8EDD5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		8433D5981A8A99CE00E8EDD5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		84370B411A88F3A500F751F3 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		84B1CB511A8793E800007D0C /* FreehandDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreehandDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1CB551A8793E800007D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				84B1CB621A8793E800007D0C /* Base */,
+				8433D5971A8A99CE00E8EDD5 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				84B1CB671A8793E900007D0C /* Base */,
+				8433D5981A8A99CE00E8EDD5 /* ru */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

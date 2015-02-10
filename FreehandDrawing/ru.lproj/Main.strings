@@ -1,0 +1,18 @@
+
+/* Class = "IBUIButton"; accessibilityLabel = "ло л "; ObjectID = "GAm-cB-WC9"; */
+"GAm-cB-WC9.accessibilityLabel" = "ло л ";
+
+/* Class = "IBUIButton"; normalTitle = "kj k l lk "; ObjectID = "GAm-cB-WC9"; */
+"GAm-cB-WC9.normalTitle" = "kj k l lk ";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "N5W-Qe-0vz"; */
+"N5W-Qe-0vz.normalTitle" = "Button";
+
+/* Class = "IBUISegmentedControl"; Yxp-7U-7uV.segmentTitles[0] = "First"; ObjectID = "Yxp-7U-7uV"; */
+"Yxp-7U-7uV.segmentTitles[0]" = "First";
+
+/* Class = "IBUISegmentedControl"; Yxp-7U-7uV.segmentTitles[1] = "Second"; ObjectID = "Yxp-7U-7uV"; */
+"Yxp-7U-7uV.segmentTitles[1]" = "Second";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "cFz-Vq-iJb"; */
+"cFz-Vq-iJb.text" = "Label";
