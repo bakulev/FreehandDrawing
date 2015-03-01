@@ -13,3 +13,4 @@ Support of multitouch got from [http://www.informit.com/articles/article.aspx?p=
 
 Хороший набор примеров проектов и описание как сделать свой переход между View и своё распознование перелистывания этих View [http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app]
 
+Полезный фреймворк для In-app purchase [https://github.com/MugunthKumar/MKStoreKit]

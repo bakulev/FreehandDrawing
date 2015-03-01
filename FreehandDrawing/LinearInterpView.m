@@ -111,6 +111,10 @@
         //CGPoint p = [touch locationInView:self];
         
     }
+    //AudioServicesPlaySystemSound();
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate); // Vibrates or beeps.
+    //AudioServicesPlaySystemSound(kSystemSoundID_Vibrate); // Vibrate or silent if no vibrate.
+    AudioServicesPlayAlertSound(1105); // play the less annoying tick noise
     [self touchesMoved:touches withEvent:event];
     [self setNeedsDisplay];
 }
