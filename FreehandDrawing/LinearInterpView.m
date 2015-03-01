@@ -7,9 +7,17 @@
 //
 
 #import "LinearInterpView.h"
+#import "LineObject.h"
+//struct CGLine
+//{
+//    CGPoint a;
+//    CGPoint b;
+//};
+//typedef struct CGLine CGLine;
 
 @implementation LinearInterpView
 {
+    NSMutableSet *lines; // Set of lines on screen to read.
     NSMutableArray *strokes;
     NSMutableDictionary *touchPaths;
     //UIBezierPath *path; // (3)
@@ -21,6 +29,18 @@
     {
         [self setMultipleTouchEnabled:YES]; // (2)
         [self setBackgroundColor:[UIColor whiteColor]];
+        
+        // Set of lines on screen to read.
+        CGLine *l1 = [[CGLine alloc] init]; l1.a = CGPointMake(100,200); l1.b = CGPointMake(400,200);
+        CGLine *l2 = [[CGLine alloc] init]; l2.a = CGPointMake(600,200); l2.b = CGPointMake(1100,200);
+        CGLine *l3 = [[CGLine alloc] init]; l3.a = CGPointMake(30,350); l3.b = CGPointMake(100,350);
+        CGLine *l4 = [[CGLine alloc] init]; l4.a = CGPointMake(300,350); l4.b = CGPointMake(600,350);
+        CGLine *l5 = [[CGLine alloc] init]; l5.a = CGPointMake(30,500); l5.b = CGPointMake(100,500);
+        CGLine *l6 = [[CGLine alloc] init]; l6.a = CGPointMake(300,500); l6.b = CGPointMake(600,500);
+        CGLine *l7 = [[CGLine alloc] init]; l7.a = CGPointMake(0,650); l7.b = CGPointMake(300,650);
+        CGLine *l8 = [[CGLine alloc] init]; l8.a = CGPointMake(500,650); l8.b = CGPointMake(700,650);
+        lines = [NSMutableSet setWithObjects: l1, l2, l3, l4, l5, l6, l7, l8, nil];
+        
         strokes = [NSMutableArray array];
         touchPaths = [NSMutableDictionary dictionary];
         //path = [UIBezierPath bezierPath];
@@ -35,6 +55,40 @@
  */
 - (void)drawRect:(CGRect)rect // (5)
 {
+    // Draw region to switch
+    [[UIColor blackColor] setStroke];
+    CGRect r = CGRectMake(0,450,200,300);
+    UIBezierPath* p = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(r,10,10) cornerRadius:10];
+    [p stroke];
+    CGPoint c = CGPointMake(r.origin.x + r.size.width / 2.0, r.origin.y + 1.0 * r.size.height / 4.0);
+    p = [UIBezierPath bezierPath];
+    [p moveToPoint:CGPointMake(c.x-60, c.y-50)];
+    [p addLineToPoint:CGPointMake(c.x-60, c.y+50)];
+    [p addLineToPoint:CGPointMake(c.x+60, c.y+50)];
+    [p addLineToPoint:CGPointMake(c.x+60, c.y-50)];
+    [p closePath];
+    [p fill];
+    c = CGPointMake(r.origin.x + r.size.width / 2.0, r.origin.y + 3.0 * r.size.height / 4.0);
+    p = [UIBezierPath bezierPath];
+    [p moveToPoint:CGPointMake(c.x-60, c.y-50)];
+    [p addLineToPoint:CGPointMake(c.x-60, c.y+50)];
+    [p addLineToPoint:CGPointMake(c.x+60, c.y+50)];
+    [p addLineToPoint:CGPointMake(c.x+60, c.y-50)];
+    [p closePath];
+    //[p fill];
+    [p stroke];
+    
+    // Draw lines to read
+    [[UIColor blackColor] setStroke];
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    path.lineWidth = 50; //IS_IPAD? 8: 4;
+    path.lineCapStyle = kCGLineCapRound;
+    for (CGLine *line in lines) {
+        [path moveToPoint: line.a];
+        [path addLineToPoint: line.b];
+    }
+    [path stroke];
+    
     // Draw existing strokes in dark purple, in-progress ones in light
     [[UIColor purpleColor] setStroke];
     for (UIBezierPath *path in strokes)
